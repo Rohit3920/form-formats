@@ -1,31 +1,31 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-a{
-    color: rgb(0, 0, 0);
+a {
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
-body{
+body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(23, 34, 184, 0.911);
+    background-color: rgba(0, 8, 112, 1);
+    color: white;
 }
 
-h1{
+h1 {
     font-weight: 800;
     color: white;
     margin-bottom: 20px;
 }
 
-form.main{
+form.main {
     width: 40%;
     position: relative;
     border: 2px solid skyblue;
@@ -34,64 +34,66 @@ form.main{
 
 }
 
-.main h2{
+.main h2 {
     background-color: skyblue;
     width: 120px;
-
+    color: black;
     position: absolute;
     top: -5px;
     left: 35%;
     padding: 8px;
-    border-radius: 0 0 4px 4px ;
+    border-radius: 0 0 4px 4px;
 }
 
-.main:hover > h2,  .main:hover{
+.main:hover>h2,
+.main:hover {
     box-shadow: 0 0 10px skyblue;
 }
 
-.user{
+.user {
     margin: 50px auto 20px auto;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
     position: relative;
 }
 
-.user:hover{
+.user:hover {
     box-shadow: 0 0 10px skyblue;
 
 }
 
-.user i{
+.user i {
     font-size: 50px;
     position: absolute;
     top: 25%;
-    left:30%;
-    color: rgb(0, 0, 0);
+    left: 30%;
+    color: rgb(255, 255, 255);
 
 }
 
-.feild{
+.feild {
     width: 80%;
     height: 20px;
     margin: 0 auto 20px auto;
-    border-bottom: 2px solid black;
-    padding:10px  4px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    ;
+    padding: 10px 4px;
     position: relative;
 
 }
 
-.feild i{
+.feild i {
     padding: 4px 10px;
     position: absolute;
     top: 10px;
     left: 8px;
     border-right: 2px solid rgb(58, 58, 58);
-   
+
 }
 
-.feild input{
+.feild input {
     position: absolute;
     width: 80%;
     top: 10px;
@@ -102,68 +104,73 @@ form.main{
     font-size: 18px;
 }
 
-.feild label{
+.feild label {
     position: absolute;
     top: 10px;
     left: 50px;
     font-size: 18px;
     pointer-events: none;
     background-color: transparent;
+    transition:  1.5s;
 }
 
 
-.feild input:focus ~ label,
-.feild input:valid ~ label{
+.feild input:focus~label,
+.feild input:valid~label {
     display: none;
-    
-}
-
-.feild input:valid ~ .feild{
-    box-shadow:0 0 5px blue, 0 0 8px skyblue;
 
 }
 
-.content{
+.feild input:valid~.feild {
+    box-shadow: 0 0 5px blue, 0 0 8px skyblue;
+
+}
+
+.content {
     width: 100%;
     height: 10vh;
     position: relative;
 }
 
-.remainder{
+.remainder {
     text-align: left;
     margin-left: 50px;
     position: absolute;
-    top: 5px ;
+    top: 5px;
     left: -10px;
 }
 
-.forget{
+.forget {
     text-align: end;
     margin-right: 50px;
     position: absolute;
-    top: 5px ;
+    top: 5px;
     right: -10px;
 }
 
-button{
+button {
     width: 90%;
     height: 40px;
     background-color: blue;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
     border: none;
     border-radius: 10px;
     margin: 10px;
     margin-bottom: 20px;
 }
 
-button:hover{
-    box-shadow:0 0 5px blue, 0 0 8px skyblue;
+button:hover {
+    box-shadow: 0 0 5px blue, 0 0 8px skyblue;
+    text-transform: uppercase;
 }
 
-input [type="checkbox"]{
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: #fff;
-  margin: 0;
+input [type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
 }
 
 input[type="checkbox"]::before {
@@ -173,9 +180,4 @@ input[type="checkbox"]::before {
     transform: scale(0);
     transition: 120ms transform ease-in-out;
     box-shadow: inset 1em 1em var(--form-control-color);
-  }
-
-
-
-
-
+}
