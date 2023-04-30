@@ -1,12 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form N0.2</title>
 </head>
-<body>
-    
+
+<body style="text-align: center">
+    <div id="login-form">
+        <form action="get">
+            <div class="header">
+                <h1>Login-FORM</h1>
+            </div>
+
+            <div class="inputDiv">
+                <input type="text" name="Username" placeholder="Enter Username" />
+                <label for="Username">Username </label>
+            </div>
+
+            <div class="inputDiv">
+                <input type="password" name="password" placeholder="Enter password" />
+                <label for="password">Password</label>
+            </div>
+
+            <div class="forget">
+                <a href="#">Forget Password ?</a>
+            </div>
+
+            <div class="button">
+                <button type="submit">Login</button>
+            </div>
+
+            <div class="signupDiv">
+                Create an Account
+                <a href="#">sign-Up</a>
+            </div>
+        </form>
+    </div>
+
+    <div id="signup-form">
+        <form action="post">
+            <h1>Create an Account</h1>
+
+            <div class="inputName">
+                <label for="first">Name : </label>
+                <input type="text" name="frist" placeholder="Frist Name" />
+                <input type="text" name="frist" placeholder="Middle Name" />
+                <input type="text" name="frist" placeholder="Last Name" />
+            </div>
+
+            <div class="moreInfo">
+                <div class="contact-no">
+                    <label for="Mobile">Contact NO. : </label>
+                    <input type="number" name="Mobile" />
+                </div>
+
+                <div class="email-id">
+                    <label for="email">Email Id</label>
+                    <input type="email" name="email" />
+                </div>
+
+                <div class="Gender">
+                    <label for="Gender">Gender : </label>
+                    Male<input type="radio" name="gender" /> Female<input type="radio" name="gender" />
+                    Other<input type="radio" name="gender" />
+                </div>
+            </div>
+            <div class="address">
+                <h3>Address :</h3>
+                <label for="village">village / Galli - </label>
+                <input type="text" name="village" />
+
+                <label for="postOffice">, Post - </label>
+                <input type="text" name="postOffice" /> <br />
+
+                <label for="taluka">Taluka - </label>
+                <input type="text" name="taluka" />
+
+                <label for="dist">, District - </label>
+                <input type="text" name="dist" /><br />
+
+                <label for="state">State - </label>
+                <input type="text" name="state" />
+
+                <label for="country">, Country - </label>
+                <select name="country">
+                    <option value="India" disabled>Choose Country</option>
+                    <option value="India">INDIA</option>
+                    <option value="India">China</option>
+                    <option value="India">America</option>
+                    <option value="India">Pakistan</option>
+                </select><br />
+
+                <label for="pinNo"> Pin Code - </label>
+                <input type="number" name="pinNo" />
+            </div>
+
+            <dov class="passDiv">
+                <h3>Password</h3>
+                <input type="password" name="password" id="pass1" />
+                <h3>Re-password</h3>
+                <input type="password" name="repassword" id="pass2" />
+            </dov>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
