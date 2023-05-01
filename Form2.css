@@ -100,7 +100,7 @@ input[type=number]::-webkit-outer-spin-button {
     text-decoration: none;
 }
 
-#login-form div.forget a:hover, #login-form div.signupDiv a:hover {
+#login-form div.forget a:hover, #login-form div.signupDiv a:hover, #signup-form .loginDiv a:hover {
     text-decoration: underline;
     color: white;
 }
@@ -155,4 +155,9 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 16px;
     word-spacing: 2%;
     font-weight: 700;
+}
+
+#signup-form .loginDiv a{
+    color: rgb(0, 0, 38);
+    text-decoration: none;
 }
