@@ -9,6 +9,7 @@
 
 body {
     background-color: var(background);
+
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -22,7 +23,8 @@ input[type=number]::-webkit-outer-spin-button {
 #login-form {
     width: 30%;
     height: 30em;
-    margin: 30px auto;
+    position: relative;
+    margin: 30px 35%;
     border: 2px double black;
     border-radius: 2em;
     float: left;
@@ -118,7 +120,8 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: center;
     width: 50%;
     height: 30em;
-    margin: 30px auto;
+    position: relative;
+    margin: 30px 25%;
     border: 2px double black;
     border-radius: 2em;
     float: left;
@@ -172,4 +175,27 @@ input[type=number]::-webkit-outer-spin-button {
 .hiddenCls{
     display: none;
     visibility: hidden;
+}
+
+/* .closeBtn{
+    padding: 8px 12px 8px 8px;
+    float: right;
+    border-radius: 0 20px 0 0;
+    border: none;
+    color: red;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 20px;
+} */
+
+.closeBtn{
+    padding: 8px 12px 8px 8px;
+    position: absolute;
+    right: 1px;
+    border-radius: 0 20px 0 0;
+    border: none;
+    color: red;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 20px;
 }

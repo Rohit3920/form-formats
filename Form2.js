@@ -1,3 +1,5 @@
+alert("Username = Rohit && Password = R1234")
+
 function onSubmit(e) {
     e.preventDefault();
 }
@@ -47,4 +49,28 @@ function validPass() {
     }
 
     return true;
+}
+
+function hideShowLog() {
+    var log = document.getElementById('login-form')
+    var sign = document.getElementById('signup-form')
+
+        sign.className= 'hiddenCls';
+        log.className = ''
+}
+
+function hideShowSign() {
+    var log = document.getElementById('login-form')
+    var sign = document.getElementById('signup-form')
+
+        sign.className= '';
+        log.className = 'hiddenCls'
+}
+
+function closeForm(){
+    var log = document.getElementById('login-form')
+    var sign = document.getElementById('signup-form')
+
+        sign.className= 'hiddenCls';
+        log.className = 'hiddenCls'
 }
