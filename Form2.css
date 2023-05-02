@@ -1,15 +1,14 @@
-:root {
-    background: #1bcaff;
-}
-
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: var(background);
-
+    /* background-color: var(background); */
+    background-image: url(templet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: scroll;
 }
 
 nav.navigationBar{
@@ -23,38 +22,27 @@ nav h1{
     position: absolute;
     padding: 10px;
 }
-
 nav h2{
     position: absolute;
     padding: 10px;
     left: 3%;
 }
-
 nav div.link{
     float: right;
     padding: 10px;
     margin-right: 20px;
 }
-
 nav div.link a{
     padding: 2px 10px 0 10px;
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
 }
-
-nav div.link a:hover{
-    color: #455455;
+nav div.link a:hover,nav div.link a.active{
+    color: rgb(255, 255, 255);
     padding-bottom: 4px ;
-    border-bottom: 2px solid #455455;
+    border-bottom: 2px solid white;
 }
-
-nav div.link a.active{
-    color: #455455;
-    padding-bottom: 4px ;
-    border-bottom: 2px solid #455455;
-}
-
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -73,12 +61,10 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 2em;
     float: left;
 }
-
 #login-form h1 {
     text-align: center;
     padding: 1em;
 }
-
 #login-form div.inputDiv {
     padding: 10px 10px 10px 10px;
     position: relative;
@@ -88,7 +74,6 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 4px;
     border: 1px solid black;
 }
-
 #login-form div.inputDiv input {
     border: none;
     outline: none;
@@ -99,7 +84,6 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: transparent;
     font-size: 1em;
 }
-
 #login-form div.inputDiv label {
     position: absolute;
     top: 1;
@@ -107,33 +91,29 @@ input[type=number]::-webkit-outer-spin-button {
     left: 3rem;
     pointer-events: none;
 }
-
 #login-form .inputDiv input:hover ~ label,
 #login-form .inputDiv input:valid ~ label{
     top: -12px;
     left: 4px;
     padding:0 4px;
     font-size: 12px;
-    background-color: #1bcaff;
+    background-color:rgb(230, 230, 230);
 }
-
 #login-form #userSpan, #passSpan{
     position: absolute;
-    font-size: 14px;
-    left: 7em;
+    font-size: 12px;
+    left: 9.5em;
     color: red;
-    background-color: #1bcaff;
+    background-color:rgb(230, 230, 230);
     padding: 0 4px;
-    top: 2em;
+    top: 2.3em;
 }
-
 #login-form div.forget a {
     color: rgb(0, 0, 38);
     text-decoration: none;
     margin-left: 4rem;
     float: left;
 }
-
 #login-form div.button button {
     padding: 8px 35%;
     margin: 10px 10%;
@@ -144,47 +124,36 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 10px;
     border: none;
 }
-
 #login-form div.signupDiv {
     text-align: center;
 }
-
 #login-form div.signupDiv a {
     color: rgb(0, 0, 38);
     text-decoration: none;
 }
-
 #login-form div.forget a:hover, #login-form div.signupDiv a:hover, #signup-form .loginDiv a:hover {
     text-decoration: underline;
-    color: white;
+    color: rgb(161, 102, 0);
 }
 
 /* //Sign Up form  */
 #signup-form {
     text-align: center;
     width: 50%;
-    height: 30em;
+
     position: relative;
     margin: 30px 25%;
     border: 2px double black;
     border-radius: 2em;
     float: left;
-    overflow: scroll;
 }
-
-::-webkit-scrollbar {
-    display: none;
-}
-
 #signup-form h1 {
     text-align: center;
     padding: 1em;
 }
-
 #signup-form div {
     margin: 10px auto;
 }
-
 #signup-form input {
     padding: 4px;
     border-radius: 4px;
@@ -194,12 +163,10 @@ input[type=number]::-webkit-outer-spin-button {
     background: rgba(255, 255, 255, 0.7);
     outline: none;
 }
-
 .h3 {
     text-align: left;
     margin: 10px auto 5px 20px;
 }
-
 #signup-form div.SubBtn button{
     padding: 8px;
     color: white;
@@ -210,12 +177,10 @@ input[type=number]::-webkit-outer-spin-button {
     word-spacing: 2%;
     font-weight: 700;
 }
-
 #signup-form .loginDiv a{
     color: rgb(0, 0, 38);
     text-decoration: none;
 }
-
 .hiddenCls{
     display: none;
     visibility: hidden;
@@ -228,17 +193,6 @@ select{
     outline: none;
 }
 
-/* .closeBtn{
-    padding: 8px 12px 8px 8px;
-    float: right;
-    border-radius: 0 20px 0 0;
-    border: none;
-    color: red;
-    background-color: transparent;
-    font-weight: 700;
-    font-size: 20px;
-} */
-
 .closeBtn{
     padding: 8px 12px 8px 8px;
     position: absolute;
@@ -249,4 +203,10 @@ select{
     background-color: transparent;
     font-weight: 700;
     font-size: 20px;
+}
+
+@media(width : 468px){
+#login-form{
+    width: 100%;
+}
 }
