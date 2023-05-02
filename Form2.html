@@ -59,20 +59,20 @@
 
             <div class="inputName">
                 <label for="first">Name : </label>
-                <input type="text" name="frist" placeholder="Frist Name" />
-                <input type="text" name="frist" placeholder="Middle Name" />
-                <input type="text" name="frist" placeholder="Last Name" />
+                <input type="text" name="frist" placeholder="Frist Name" required/>
+                <input type="text" name="frist" placeholder="Middle Name" required/>
+                <input type="text" name="frist" placeholder="Last Name" required/>
             </div>
 
             <div class="moreInfo">
                 <div class="contact-no">
                     <label for="Mobile">Contact NO. : </label>
-                    <input type="number" name="Mobile" />
+                    <input type="number" name="Mobile" required/>
                 </div>
 
                 <div class="email-id">
                     <label for="email">Email Id</label>
-                    <input type="email" name="email" />
+                    <input type="email" name="email" required/>
                 </div>
 
                 <div class="Gender">
@@ -84,22 +84,22 @@
             <div class="address">
                 <h3 class="h3">Address :</h3>
                 <label for="village">village / Galli - </label>
-                <input type="text" name="village" />
+                <input type="text" name="village" required/>
 
                 <label for="postOffice">, Post - </label>
-                <input type="text" name="postOffice" /> <br />
+                <input type="text" name="postOffice" required/> <br />
 
                 <label for="taluka">Taluka - </label>
-                <input type="text" name="taluka" />
+                <input type="text" name="taluka" required/>
 
                 <label for="dist">, District - </label>
-                <input type="text" name="dist" /><br />
+                <input type="text" name="dist" required /><br />
 
                 <label for="state">State - </label>
-                <input type="text" name="state" />
+                <input type="text" name="state" required/>
 
                 <label for="country">, Country - </label>
-                <select name="country">
+                <select name="country" required>
                     <option value="India" disabled>Choose Country</option>
                     <option value="India">INDIA</option>
                     <option value="India">China</option>
@@ -108,18 +108,19 @@
                 </select><br />
 
                 <label for="pinNo"> Pin Code - </label>
-                <input type="number" name="pinNo" />
+                <input type="number" name="pinNo" required/>
             </div>
 
             <dov class="passDiv">
                 <h3>Password</h3>
-                <input type="password" name="password" id="pass1" />
+                <input type="password" name="password" id="pass1" required/>
                 <h3>Re-password</h3>
-                <input type="password" name="repassword" id="pass2" />
+                <input type="password" name="repassword" id="pass2" required/>
             </dov>
 
             <div class="SubBtn">
                 <button type="submit">Submit</button>
+                <button type="reset" >Reset</button>
             </div>
         </form>
             <div class="loginDiv">
