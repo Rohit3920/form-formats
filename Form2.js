@@ -8,6 +8,12 @@ var username = document.getElementById('username')
 var password = document.getElementById('password')
 var userSpan = document.getElementById('userSpan')
 var passSpan = document.getElementById('passSpan')
+var LoginLink = document.getElementById('navLogLink')
+var signupLink = document.getElementById('navSignLink')
+var log = document.getElementById('login-form')
+var sign = document.getElementById('signup-form')
+var log = document.getElementById('login-form')
+var sign = document.getElementById('signup-form')
 
 function validation() {
     var usernameValid = username.value;
@@ -52,25 +58,44 @@ function validPass() {
 }
 
 function hideShowLog() {
-    var log = document.getElementById('login-form')
-    var sign = document.getElementById('signup-form')
 
-        sign.className= 'hiddenCls';
-        log.className = ''
+
+    sign.className = 'hiddenCls';
+    log.className = ''
+
+    activeCls()
 }
 
 function hideShowSign() {
     var log = document.getElementById('login-form')
     var sign = document.getElementById('signup-form')
 
-        sign.className= '';
-        log.className = 'hiddenCls'
+    sign.className = '';
+    log.className = 'hiddenCls'
+
+    activeCls()
 }
 
-function closeForm(){
+function closeForm() {
     var log = document.getElementById('login-form')
     var sign = document.getElementById('signup-form')
 
-        sign.className = 'hiddenCls';
-        log.className = 'hiddenCls'
+    sign.className = 'hiddenCls';
+    log.className = 'hiddenCls'
+
+    LoginLink.className = ""
+    signupLink.className = ""
+}
+
+function activeCls() {
+
+
+    console.log(LoginLink.className)
+    if (log.className == "") {
+        LoginLink.className = "active"
+        signupLink.className = ""
+    } else {
+        LoginLink.className = ""
+        signupLink.className = "active"
+    }
 }

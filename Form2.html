@@ -10,19 +10,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body >
+<body>
     <nav class="navigationBar">
         <h1><i class="fa-solid fa-file-signature"></i></h1>
         <h2>Web Developer ROHIT</h2>
 
-       <div class="link">
-        <a href="#" onclick="hideShowLog()">Login</a>
-        |
-        <a href="#" onclick="hideShowSign()">signup</a>
-       </div>
+        <div class="link">
+            <a href="#" id="navLogLink" class="active" onclick="hideShowLog()">Login</a>
+            |
+            <a href="#" id="navSignLink" onclick="hideShowSign()">signup</a>
+        </div>
     </nav>
 
-    <div id="login-form" >
+    <div id="login-form">
         <button type="button" class="closeBtn" onclick="closeForm()">X</button>
         <form onsubmit="onSubmit()">
             <div class="header">
@@ -31,14 +31,14 @@
 
             <div class="inputDiv" id="inUserDiv">
                 <i class="fa fa-user-circle" aria-hidden="true"></i>
-                <input type="text" id="username" name="Username" onchange="validUser()" required/>
+                <input type="text" id="username" name="Username" onchange="validUser()" required />
                 <label for="Username">Enter Username </label>
                 <span id="userSpan"></span>
             </div>
 
             <div class="inputDiv " id="inPassDiv">
                 <i class="fa fa-lock" aria-hidden="true"></i>
-                <input type="password" id="password" name="password" onchange="validPass()" required/>
+                <input type="password" id="password" name="password" onchange="validPass()" required />
                 <label for="password">Enter Password</label>
                 <span id="passSpan"></span>
 
@@ -63,27 +63,27 @@
     <div id="signup-form" class="hiddenCls">
         <button type="button" class="closeBtn" onclick="closeForm()">X</button>
 
-        <form >
+        <form>
             <h1>Create an Account</h1>
 
             <h3 class="h3">General Info :</h3>
 
             <div class="inputName">
                 <label for="first">Name : </label>
-                <input type="text" name="frist" placeholder="Frist Name" required/>
-                <input type="text" name="frist" placeholder="Middle Name" required/>
-                <input type="text" name="frist" placeholder="Last Name" required/>
+                <input type="text" name="frist" placeholder="Frist Name" required />
+                <input type="text" name="frist" placeholder="Middle Name" required />
+                <input type="text" name="frist" placeholder="Last Name" required />
             </div>
 
             <div class="moreInfo">
                 <div class="contact-no">
                     <label for="Mobile">Contact NO. : </label>
-                    <input type="number" name="Mobile" required/>
+                    <input type="number" name="Mobile" required />
                 </div>
 
                 <div class="email-id">
                     <label for="email">Email Id</label>
-                    <input type="email" name="email" required/>
+                    <input type="email" name="email" required />
                 </div>
 
                 <div class="Gender">
@@ -95,19 +95,19 @@
             <div class="address">
                 <h3 class="h3">Address :</h3>
                 <label for="village">village / Galli - </label>
-                <input type="text" name="village" required/>
+                <input type="text" name="village" required />
 
                 <label for="postOffice">, Post - </label>
-                <input type="text" name="postOffice" required/> <br />
+                <input type="text" name="postOffice" required /> <br />
 
                 <label for="taluka">Taluka - </label>
-                <input type="text" name="taluka" required/>
+                <input type="text" name="taluka" required />
 
                 <label for="dist">, District - </label>
                 <input type="text" name="dist" required /><br />
 
                 <label for="state">State - </label>
-                <input type="text" name="state" required/>
+                <input type="text" name="state" required />
 
                 <label for="country">, Country - </label>
                 <select name="country" required>
@@ -119,25 +119,25 @@
                 </select><br />
 
                 <label for="pinNo"> Pin Code - </label>
-                <input type="number" name="pinNo" required/>
+                <input type="number" name="pinNo" required />
             </div>
 
             <dov class="passDiv">
                 <h3>Password</h3>
-                <input type="password" name="password" id="pass1" required/>
+                <input type="password" name="password" id="pass1" required />
                 <h3>Re-password</h3>
-                <input type="password" name="repassword" id="pass2" required/>
+                <input type="password" name="repassword" id="pass2" required />
             </dov>
 
             <div class="SubBtn">
                 <button type="submit">Submit</button>
-                <button type="reset" >Reset</button>
+                <button type="reset">Reset</button>
             </div>
         </form>
-            <div class="loginDiv">
-                Already hava an Account
-                <a href="#" onclick="hideShowLog()">login ?</a>
-            </div>
+        <div class="loginDiv">
+            Already hava an Account
+            <a href="#" onclick="hideShowLog()">login ?</a>
+        </div>
     </div>
 
     <script src="Form2.js"></script>
