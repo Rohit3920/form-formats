@@ -51,7 +51,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 80%;
     position: absolute;
     top: 1;
-    left: 3em;
+    left: 2.5em;
     background-color: transparent;
     font-size: 1em;
 }
@@ -59,6 +59,7 @@ input[type=number]::-webkit-outer-spin-button {
 #login-form div.inputDiv label {
     position: absolute;
     top: 1;
+    color: darkslategray;
     left: 3rem;
     pointer-events: none;
 }
@@ -70,6 +71,16 @@ input[type=number]::-webkit-outer-spin-button {
     padding:0 4px;
     font-size: 12px;
     background-color: #1bcaff;
+}
+
+#login-form #userSpan, #passSpan{
+    position: absolute;
+    font-size: 14px;
+    left: 7em;
+    color: red;
+    background-color: #1bcaff;
+    padding: 0 4px;
+    top: 2em;
 }
 
 
@@ -160,4 +171,10 @@ input[type=number]::-webkit-outer-spin-button {
 #signup-form .loginDiv a{
     color: rgb(0, 0, 38);
     text-decoration: none;
+}
+
+
+.hiddenCls{
+    display: none;
+    visibility: hidden;
 }

@@ -17,16 +17,19 @@
                 <h1>Login-FORM</h1>
             </div>
 
-            <div class="inputDiv">
+            <div class="inputDiv inUserDiv">
                 <i class="fa fa-user-circle" aria-hidden="true"></i>
-                <input type="text" id="username" name="Username"  required/>
+                <input type="text" id="username" name="Username" onchange="validUser()" required/>
                 <label for="Username">Enter Username </label>
+                <span id="userSpan"></span>
             </div>
 
-            <div class="inputDiv">
+            <div class="inputDiv inPassDiv">
                 <i class="fa fa-lock" aria-hidden="true"></i>
-                <input type="password" id="password" name="password"  required/>
+                <input type="password" id="password" name="password" onchange="validPass()" required/>
                 <label for="password">Enter Password</label>
+                <span id="passSpan"></span>
+
             </div>
 
             <div class="forget">
