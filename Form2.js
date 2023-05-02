@@ -13,7 +13,7 @@ function validation() {
     var usernameValid = username.value;
     var passwordValid = password.value;
 
-    if (usernameValid == 'rohit') {
+    if (usernameValid == 'Rohit') {
         if (passwordValid == 'R1234') {
             alert(`User ${usernameValid} !!! You are successfully Login`)
         } else {
@@ -71,6 +71,6 @@ function closeForm(){
     var log = document.getElementById('login-form')
     var sign = document.getElementById('signup-form')
 
-        sign.className= 'hiddenCls';
+        sign.className = 'hiddenCls';
         log.className = 'hiddenCls'
 }
