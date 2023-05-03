@@ -63,7 +63,7 @@
     <div id="signup-form" class="hiddenCls">
         <button type="button" class="closeBtn" onclick="closeForm()">X</button>
 
-        <form>
+        <form onsubmit="saveData()">
             <h1>Create an Account</h1>
 
             <h3 class="h3">General Info :</h3>
@@ -84,6 +84,11 @@
                 <div class="email-id">
                     <label for="email">Email Id</label>
                     <input type="email" name="email" required placeholder="text@gmail.com"/>
+                </div>
+
+                <div class="birth-date">
+                    <label for="birth-date">Date of Birth</label>
+                    <input type="date" name="birth-date" required />
                 </div>
 
                 <div class="Gender">
@@ -122,17 +127,21 @@
                 <input type="number" name="pinNo" required placeholder="000-000"/>
             </div>
 
-            <dov class="passDiv">
+            <div class="passDiv">
                 <h3>Password</h3>
-                <input type="password" name="password" id="pass1" required />
+                <input type="password" name="passwordIn" id="pass1" autocomplete="cc-name" required /><br/>
+                <span id="pass1Span"></span>
+                <br/><br/>
                 <h3>Re-password</h3>
-                <input type="password" name="repassword" id="pass2" required />
-            </dov>
+                <input type="password" name="repasswordIn" id="pass2" required /><br/>
+                <span id="pass2Span"></span>
+            </div><br/>  
 
             <div class="SubBtn">
-                <button type="submit">Submit</button>
+                <button type="submit" onclick="SignupData()">Submit</button>
                 <button type="reset">Reset</button>
             </div>
+            
         </form>
         <div class="loginDiv">
             Already hava an Account

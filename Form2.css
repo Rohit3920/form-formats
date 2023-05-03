@@ -159,7 +159,7 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 4px;
     border: none;
     border-bottom: 0.5px solid black;
-    margin: 4px;
+    margin:4px;
     background: rgba(255, 255, 255, 0.7);
     outline: none;
 }
@@ -180,6 +180,21 @@ input[type=number]::-webkit-outer-spin-button {
 #signup-form .loginDiv a{
     color: rgb(0, 0, 38);
     text-decoration: none;
+}
+#signup-form input[type= "password"]{
+    word-spacing: 4px;
+    font-size: 16px;
+}
+.passDiv span{
+    color: red;
+    font-size: 14px;
+    border-top: none;
+    float: right;
+    margin-right: 30%;
+    font-weight: 100;
+    padding: 0px 8px;
+    border-radius: 0 0 8px 8px;
+    opacity: 0.8;
 }
 .hiddenCls{
     display: none;
@@ -205,8 +220,8 @@ select{
     font-size: 20px;
 }
 
-@media(width : 468px){
+/* @media(width : 468px){
 #login-form{
     width: 100%;
 }
-}
+} */
