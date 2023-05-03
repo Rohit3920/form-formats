@@ -91,7 +91,7 @@ input[type=number]::-webkit-outer-spin-button {
     left: 3rem;
     pointer-events: none;
 }
-#login-form .inputDiv input:hover ~ label,
+#login-form .inputDiv input:focus ~ label,
 #login-form .inputDiv input:valid ~ label{
     top: -12px;
     left: 4px;

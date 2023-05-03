@@ -2,8 +2,13 @@ alert("Username = Rohit && Password = Rohit1234")
 
 function onSubmit(e) {
     e.preventDefault();
-}
+}                                                                               //login form for subiting to stop default page refresh
+function saveData(event) {
+    event.preventDefault();
+    passEqual()
+}                                                                               //signup form for subiting to stop default page refresh
 
+//all hmtl element are convert variable
 var username = document.getElementById('username')
 var password = document.getElementById('password')
 var userSpan = document.getElementById('userSpan')
@@ -30,7 +35,7 @@ function validation() {
     } else {
         alert("User Not Found")
     }
-}
+}                                                                           //login logic use if-else condition
 
 function validUser() {
     var u_length = username.value.length;
@@ -42,7 +47,7 @@ function validUser() {
         document.getElementById('inUserDiv').style.borderColor = "black";
     }
     return true;
-}
+}                                                                              //user.length more than 3 then user valid otherwise user not valid
 function validPass() {
     var p_length = document.getElementById('password').value.length;
     if (p_length <= 3) {
@@ -53,26 +58,24 @@ function validPass() {
         document.getElementById('inPassDiv').style.borderColor = "black";
     }
     return true;
-}
-
-function hideShowLog() {
-    sign.className = 'hiddenCls';
-    log.className = ''
-    activeCls()
-}
-
-function hideShowSign() {
-    sign.className = '';
-    log.className = 'hiddenCls'
-    activeCls()
-}
+}                                                                   //password.length more than 3 then password valid otherwise password not valid
 
 function closeForm() {
     sign.className = 'hiddenCls';
     log.className = 'hiddenCls'
     LoginLink.className = ""
     signupLink.className = ""
-}
+}                                                                                //this function use for close form and focus effect in nav link
+function hideShowLog() {
+    sign.className = 'hiddenCls';
+    log.className = ''
+    activeCls()
+}                                                                                //this function use close login form
+function hideShowSign() {
+    sign.className = '';
+    log.className = 'hiddenCls'
+    activeCls()
+}                                                                                //this function use close sighup form
 function activeCls() {
     console.log(LoginLink.className)
     if (log.className == "") {
@@ -81,7 +84,7 @@ function activeCls() {
     } else {
         LoginLink.className = ""
         signupLink.className = "active"
-    }
+    }                                                                               // use in active form to focus navBar forms-links
 }
 function SignupData() {
     var set1 = checkPass.value.length;
@@ -123,8 +126,5 @@ function SignupData() {
         checkPass.style.borderColor = 'red'
     }
     set1 == 0 ? set1Fun() : set2Fun();
-}
-function saveData(event) {
-    event.preventDefault();
-    passEqual()
-}
+}                                                                                           // this logic for password handle or check equality 
+
